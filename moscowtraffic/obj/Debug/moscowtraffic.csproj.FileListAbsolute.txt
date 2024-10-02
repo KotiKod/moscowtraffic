@@ -1,0 +1,10 @@
+C:\Users\Misha\Desktop\Visual Studio\moscowtraffic\moscowtraffic\bin\Debug\moscowtraffic.exe.config
+C:\Users\Misha\Desktop\Visual Studio\moscowtraffic\moscowtraffic\bin\Debug\moscowtraffic.exe
+C:\Users\Misha\Desktop\Visual Studio\moscowtraffic\moscowtraffic\bin\Debug\moscowtraffic.pdb
+C:\Users\Misha\Desktop\Visual Studio\moscowtraffic\moscowtraffic\obj\Debug\moscowtraffic.csproj.AssemblyReference.cache
+C:\Users\Misha\Desktop\Visual Studio\moscowtraffic\moscowtraffic\obj\Debug\moscowtraffic.Form1.resources
+C:\Users\Misha\Desktop\Visual Studio\moscowtraffic\moscowtraffic\obj\Debug\moscowtraffic.Properties.Resources.resources
+C:\Users\Misha\Desktop\Visual Studio\moscowtraffic\moscowtraffic\obj\Debug\moscowtraffic.csproj.GenerateResource.cache
+C:\Users\Misha\Desktop\Visual Studio\moscowtraffic\moscowtraffic\obj\Debug\moscowtraffic.csproj.CoreCompileInputs.cache
+C:\Users\Misha\Desktop\Visual Studio\moscowtraffic\moscowtraffic\obj\Debug\moscowtraffic.exe
+C:\Users\Misha\Desktop\Visual Studio\moscowtraffic\moscowtraffic\obj\Debug\moscowtraffic.pdb
