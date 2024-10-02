@@ -30,6 +30,20 @@ namespace moscowtraffic
             dataGridView1.Rows.Add("Площадь Ильича");
             dataGridView1.Rows.Add("Римская");
             dataGridView1.Rows.Add("МЦД-4");
+            dataGridView1.Rows.Add("ул. Сергия Радонежского");
+            dataGridView1.Rows.Add("ул. Золоторожский вал");
+            dataGridView1.Rows.Add("Гжельский переулок");
+            dataGridView1[1, 0].Value = 16000 - Convert.ToDouble(label8.Text);
+            dataGridView1[1, 1].Value = 16000 - Convert.ToDouble(label7.Text);
+            dataGridView1[1, 2].Value = 5000 - Convert.ToDouble(label9.Text);
+
+            dataGridView1[2, 0].Value = 16000 - 5600;
+            dataGridView1[2, 1].Value = 16000 - 6600;
+            dataGridView1[2, 2].Value = 5000 - 3500;
+
+            dataGridView1[1, 3].Value = 3428 - 2400;
+            dataGridView1[1, 4].Value = 600 - 300;
+            dataGridView1[1, 5].Value = 500 - 150;
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -122,9 +136,21 @@ namespace moscowtraffic
             double peoples_rich_load = (square_rich) / 45 * 0.57 * 0.1;
             double peoples_poor_load = (square_poor) / 25 * 0.57 * 0.1;
 
-            label9.Text = Math.Round((Convert.ToDouble(label9.Text) + (peoples_poor_load + peoples_rich_load + workers_load)* 0.7 * 1/14), 0).ToString() + " чел./час пик" + "\n" + Math.Round((3500 + (peoples_poor_load + peoples_rich_load + workers_load) * 0.7 * 3.5 / 15.4), 0).ToString() + " чел./час пик";
-            label8.Text = Math.Round((Convert.ToDouble(label8.Text) + (peoples_poor_load + peoples_rich_load + workers_load) * 0.7 * 8.4 / 14),0).ToString() + " чел./час пик";
-            label7.Text = Math.Round((Convert.ToDouble(label7.Text) + (peoples_poor_load + peoples_rich_load + workers_load) * 0.7 * 4.6 / 14),0).ToString() + " чел./час пик";
+            dataGridView1[1, 0].Value = 16000 - Math.Round((Convert.ToDouble(label8.Text) + (peoples_poor_load + peoples_rich_load + workers_load) * 0.7 * 8.4 / 14), 0);
+            dataGridView1[1, 1].Value = 16000 - Math.Round((Convert.ToDouble(label7.Text) + (peoples_poor_load + peoples_rich_load + workers_load) * 0.7 * 4.6 / 14), 0);
+            dataGridView1[1, 2].Value = 5000 - Math.Round((Convert.ToDouble(label9.Text) + (peoples_poor_load + peoples_rich_load + workers_load) * 0.7 * 1 / 14), 0);
+
+            dataGridView1[2, 0].Value = 16000 - Math.Round((5600 + (peoples_poor_load + peoples_rich_load + workers_load) * 0.7 * 5.6 / 15.7), 0);
+            dataGridView1[2, 1].Value = 16000 - Math.Round((5600 + (peoples_poor_load + peoples_rich_load + workers_load) * 0.7 * 6.6 / 15.7), 0);
+            dataGridView1[2, 2].Value = 5000 - Math.Round((3500 + (peoples_poor_load + peoples_rich_load + workers_load) * 0.7 * 3.5 / 15.7), 0);
+
+            dataGridView1[1, 3].Value = 3428 - Math.Round((Convert.ToDouble(label5.Text) + (peoples_poor_load + peoples_rich_load + workers_load) * 0.3 / 1.2 * 2400 / 2850), 0);
+            dataGridView1[1, 4].Value = 600 - Math.Round((Convert.ToDouble(label11.Text) + (peoples_poor_load + peoples_rich_load + workers_load) * 0.3 / 1.2 * 300 / 2850), 0);
+            dataGridView1[1, 5].Value = 500 - Math.Round((Convert.ToDouble(label10.Text) + (peoples_poor_load + peoples_rich_load + workers_load) * 0.3 / 1.2 * 150 / 2850), 0);
+
+            label9.Text = Math.Round((Convert.ToDouble(label9.Text) + (peoples_poor_load + peoples_rich_load + workers_load)* 0.7 * 1/14), 0).ToString() + " чел./час пик\n" + Math.Round((3500 + (peoples_poor_load + peoples_rich_load + workers_load) * 0.7 * 3.5 / 15.7), 0).ToString() + " чел./час пик";
+            label8.Text = Math.Round((Convert.ToDouble(label8.Text) + (peoples_poor_load + peoples_rich_load + workers_load) * 0.7 * 8.4 / 14),0).ToString() + " чел./час пик\n" + Math.Round((5600 + (peoples_poor_load + peoples_rich_load + workers_load) * 0.7 * 5.6 / 15.7), 0).ToString() + " чел./час пик";
+            label7.Text = Math.Round((Convert.ToDouble(label7.Text) + (peoples_poor_load + peoples_rich_load + workers_load) * 0.7 * 4.6 / 14),0).ToString() + " чел./час пик\n" + Math.Round((5600 + (peoples_poor_load + peoples_rich_load + workers_load) * 0.7 * 6.6 / 15.7), 0).ToString() + " чел./час пик";
 
             label11.Text = Math.Round((Convert.ToDouble(label11.Text) + (peoples_poor_load + peoples_rich_load + workers_load) * 0.3 /1.2 * 300/2850), 0).ToString() + " ТС/час пик";
             label5.Text = Math.Round((Convert.ToDouble(label5.Text) + (peoples_poor_load + peoples_rich_load + workers_load) * 0.3 / 1.2 * 2400 / 2850), 0).ToString() + " ТС/час пик";
@@ -150,6 +176,17 @@ namespace moscowtraffic
             label12.Text = "0";
             label13.Text = "0";
             label14.Text = "0";
+            dataGridView1[1, 0].Value = 16000 - Convert.ToDouble(label8.Text);
+            dataGridView1[1, 1].Value = 16000 - Convert.ToDouble(label7.Text);
+            dataGridView1[1, 2].Value = 5000 - Convert.ToDouble(label9.Text);
+
+            dataGridView1[2, 0].Value = 16000 - 5600;
+            dataGridView1[2, 1].Value = 16000 - 6600;
+            dataGridView1[2, 2].Value = 5000 - 3500;
+
+            dataGridView1[1, 3].Value = 3428 - 2400;
+            dataGridView1[1, 4].Value = 600 - 300;
+            dataGridView1[1, 5].Value = 500 - 150;
             button3.Enabled = true;
         }
     }

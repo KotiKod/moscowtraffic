@@ -95,5 +95,32 @@
   <ItemGroup>
     <None Include="Resources\Rectangle 1 %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-paperclip-1643641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-calculator-164377.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-house-602261.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-house-6022611.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-apartment-1824414.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-house-5848935.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-checkmark-8625364.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-remove-1828851.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-plus-11337673.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
