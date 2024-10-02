@@ -62,7 +62,6 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -246,7 +245,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.dataGridView1);
@@ -269,7 +267,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::moscowtraffic.Properties.Resources.free_icon_train_station_2062051;
-            this.pictureBox2.Location = new System.Drawing.Point(78, 201);
+            this.pictureBox2.Location = new System.Drawing.Point(230, 276);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -400,21 +398,12 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(1085, 347);
+            this.label15.Location = new System.Drawing.Point(1085, 357);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(149, 13);
+            this.label15.Size = new System.Drawing.Size(119, 65);
             this.label15.TabIndex = 9;
-            this.label15.Text = "Нагрузка транспорта утром";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(14, 132);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(41, 13);
-            this.label16.TabIndex = 3;
-            this.label16.Text = "label16";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
+            this.label15.Text = "Нагрузка транспорта:\r\n<<утром>>\r\n<<вечером>>\r\n\r\n\r\n";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // Form1
             // 
@@ -440,7 +429,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -484,7 +472,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
     }
 }
 

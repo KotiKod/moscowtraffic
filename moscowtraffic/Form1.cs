@@ -155,7 +155,7 @@ namespace moscowtraffic
             double peoples_rich_load = (square_rich) / 45 * 0.57 * 0.1;
             double peoples_poor_load = (square_poor) / 25 * 0.57 * 0.1;
 
-            label9.Text = Math.Round((Convert.ToDouble(label9.Text) + (peoples_poor_load + peoples_rich_load + workers_load)* 0.7 * 1/14), 0).ToString() + " чел./час пик";
+            label9.Text = Math.Round((Convert.ToDouble(label9.Text) + (peoples_poor_load + peoples_rich_load + workers_load)* 0.7 * 1/14), 0).ToString() + " чел./час пик" + "\n" + Math.Round((3500 + (peoples_poor_load + peoples_rich_load + workers_load) * 0.7 * 3.5 / 15.4), 0).ToString() + " чел./час пик";
             label8.Text = Math.Round((Convert.ToDouble(label8.Text) + (peoples_poor_load + peoples_rich_load + workers_load) * 0.7 * 8.4 / 14),0).ToString() + " чел./час пик";
             label7.Text = Math.Round((Convert.ToDouble(label7.Text) + (peoples_poor_load + peoples_rich_load + workers_load) * 0.7 * 4.6 / 14),0).ToString() + " чел./час пик";
 
@@ -203,6 +203,11 @@ namespace moscowtraffic
         }
 
         private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
         {
 
         }
