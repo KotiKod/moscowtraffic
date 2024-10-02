@@ -31,28 +31,6 @@ namespace moscowtraffic
             dataGridView1.Rows.Add("Римская");
             dataGridView1.Rows.Add("МЦД-4");
         }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-        
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             double text = Convert.ToDouble(textBox1.Text);
@@ -138,17 +116,6 @@ namespace moscowtraffic
                 label4.Text = "Осталось: " + square_work.ToString() + " м2";
             }
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             double workers_load = (214000-square_work) / 35 * 0.57 * 0.35;
@@ -165,17 +132,6 @@ namespace moscowtraffic
 
             button3.Enabled = false;
         }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
-         
         private void button4_Click(object sender, EventArgs e)
         {
              square = 190000;
@@ -195,21 +151,6 @@ namespace moscowtraffic
             label13.Text = "0";
             label14.Text = "0";
             button3.Enabled = true;
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -62,11 +62,13 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -92,7 +94,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(666, 329);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label14
             // 
@@ -111,7 +112,6 @@
             this.label13.Size = new System.Drawing.Size(20, 24);
             this.label13.TabIndex = 13;
             this.label13.Text = "0";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label12
             // 
@@ -204,7 +204,6 @@
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Офис";
             this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -217,7 +216,6 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Немаленькие квартиры";
             this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
@@ -230,7 +228,6 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Небольшие квартиры";
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // label1
             // 
@@ -291,7 +288,6 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(539, 104);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // Column1
             // 
@@ -357,7 +353,6 @@
             this.label9.Size = new System.Drawing.Size(50, 24);
             this.label9.TabIndex = 6;
             this.label9.Text = "1000";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -403,7 +398,6 @@
             this.label15.Size = new System.Drawing.Size(119, 65);
             this.label15.TabIndex = 9;
             this.label15.Text = "Нагрузка транспорта:\r\n<<утром>>\r\n<<вечером>>\r\n\r\n\r\n";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // Form1
             // 
@@ -432,6 +426,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -472,6 +467,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }
 
